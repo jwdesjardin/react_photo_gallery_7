@@ -18,7 +18,7 @@ class PhotoContainer extends Component {
     }
 
 
-    // Function sends get request updates photos state with the response 
+    // Function sends get request updates searchPhotos state with the response 
     searchPhotos = term => {
         this.setState({ isLoading: true });
         axios.get(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${term}&per_page=24&format=json&nojsoncallback=1`)
@@ -53,9 +53,10 @@ class PhotoContainer extends Component {
     }
     
     render(){
-        //destructure out props and find the current picture list in the props photos
+        
         let display;
-
+        
+        //destructure out props and find if photoList was passed
         const { term } = this.props;
         const fixedPhotos = this.props.photoList || null;
 

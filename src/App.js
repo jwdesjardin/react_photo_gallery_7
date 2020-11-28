@@ -53,7 +53,6 @@ class App extends Component {
             <Route path="/cats" render={ () => <PhotoContainer term={'cats'} photoList={this.state.photosCats} />} />
             <Route path="/dogs" render={ () => <PhotoContainer term={'dogs'} photoList={this.state.photosDogs} />} />
             <Route path="/tacos" render={ () => <PhotoContainer term={'tacos'} photoList={this.state.photosTacos} />} />
-            <Route path="/huts" render={ () => <PhotoContainer  photoList={this.state.photosTacos} />} />
             <Route exact path="/search/:term" render={ (props) => <PhotoContainer term={props.match.params.term} />}  />
             <Route component={NotFound} />
           </Switch> 
