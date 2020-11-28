@@ -5,6 +5,8 @@ EXAMPLE config.js:
 const apiKey = 'a329cb........';
 export default apiKey;
 
+HOW TO USE:
+
 1. npm install
 
 2. npm start
