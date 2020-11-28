@@ -1,3 +1,18 @@
+'config.js' should be stored in the 'src' directory.
+
+EXAMPLE config.js:
+
+const apiKey = 'a329cb........';
+export default apiKey;
+
+1. npm install
+
+2. npm start
+
+Details about the functionality of the search
+
+A search route will fetch data from the flikr api each time the route is visited. Using the browser navigation will take you through the routes you visited and on a search route will fetch new data.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
