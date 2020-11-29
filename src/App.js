@@ -44,7 +44,7 @@ class App extends Component {
 
   render(){
     return (
-      <BrowserRouter>
+      <BrowserRouter basename='/react_photo_gallery_7'>
         <div className="container">
           <Search />
           <Nav />
